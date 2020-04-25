@@ -115,6 +115,7 @@ nav .nav-links a:hover {
   -webkit-filter: brightness(0.3);
           filter: brightness(0.3);
   background-size: cover;
+  z-index: -1;
 }
 
 .bg-dark {
@@ -221,6 +222,58 @@ nav .nav-links a:hover {
 .about .progress-bar .progress .progress-value {
   font-size: 15px;
   text-align: center;
+}
+
+.projects {
+  width: 100%;
+  height: 84vh;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .project {
+  width: 350px;
+  height: 210px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(242, 44, 41, 0.2);
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.projects .project .img {
+  width: 100%;
+  height: 90%;
+  background-size: cover !important;
+}
+
+.projects .project p {
+  color: #F22B29;
+  text-align: center;
+  width: 100%;
+  font-size: 19px;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.projects .project-active {
+  width: 550px;
+  height: 320px;
+}
+
+.projects .project-active p {
+  font-size: 25px;
 }
 
 footer {

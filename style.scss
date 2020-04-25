@@ -98,6 +98,7 @@ nav{
     background: url('./img/white-android-smartphone-near-grey-laptop-computer-48606.jpg');
     filter: brightness(0.3);
     background-size: cover;
+    z-index: -1;
 }
 
 .bg-dark{
@@ -189,6 +190,50 @@ nav{
                 font-size: 15px;
                 text-align: center;
             }
+        }
+    }
+}
+
+.projects{
+    width: 100%;
+    height: 84vh;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    .project{
+        width: 350px;
+        height: 210px;
+        transition: all 0.3s ease-in-out;
+        background-color: rgba(242, 44, 41, 0.2);
+        padding: 10px;
+        border-radius: 20px;
+        text-decoration: none;
+        margin: 10px;
+
+        .img{
+            width: 100%;
+            height: 90%;
+            background-size: cover !important;
+        }
+
+        p{
+            color: $PrimaryColor;
+            text-align: center;
+            width: 100%;
+            font-size: 19px;
+            transition: font-size 0.3s ease-in-out;
+        }
+    }
+
+    .project-active{
+        width: 550px;
+        height: 320px;
+
+        p{
+            font-size: 25px;
         }
     }
 }
