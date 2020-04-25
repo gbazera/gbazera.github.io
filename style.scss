@@ -5,34 +5,69 @@
     font-family: 'Poppins', sans-serif;
 }
 
-$Goldenrod: #E3E733;
-$YellowGreen: #79E733;
-$OliveDrab: #727A1B;
-$DarkGreen: #0C1C04;
-$ForestGreen: #396C18;
+$PrimaryColor: #F22B29;
+$SecondaryColor: #FFC800;
+$BgColor: #312F2F;
+$TextColor: #FBF5F3;
 
 nav{
-    position: absolute;
-    bottom: 0;
-    background-color: $DarkGreen;
+    background-color: $BgColor;
     width: 100%;
-    height: 20vh;
+    height: 8vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    .logo{
+        height: 97%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: $PrimaryColor;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .logo img{
+        height: 80%;
+        border-radius: 50%;
+    }
+
+    .nav-links{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 20%;
+
+        a{
+            color: $TextColor;
+            text-decoration: none;
+            font-size: 15px;
+        }
+    }
 }
 
-.logo{
-    height: 97%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: auto;
-    color: $Goldenrod;
-    text-decoration: none;
+.bg{
+    position: absolute;
+    height: 92vh;
+    width: 100%;
+    background: url('./img/white-android-smartphone-near-grey-laptop-computer-48606.jpg');
+    filter: brightness(0.3);
+    background-size: cover;
 }
 
-.logo img{
-    height: 80%;
-    border-radius: 50%;
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $TextColor;
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: uppercase;
+
+    .type{
+        color: $PrimaryColor;
+    }
 }

@@ -7,11 +7,9 @@
 }
 
 nav {
-  position: absolute;
-  bottom: 0;
-  background-color: #0C1C04;
+  background-color: #312F2F;
   width: 100%;
-  height: 20vh;
+  height: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,7 +20,7 @@ nav {
           align-items: center;
 }
 
-.logo {
+nav .logo {
   height: 97%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,13 +30,58 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: auto;
-  color: #E3E733;
+  color: #F22B29;
   text-decoration: none;
+  font-size: 20px;
 }
 
-.logo img {
+nav .logo img {
   height: 80%;
   border-radius: 50%;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
+nav .nav-links a {
+  color: #FBF5F3;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.bg {
+  position: absolute;
+  height: 92vh;
+  width: 100%;
+  background: url("./img/white-android-smartphone-near-grey-laptop-computer-48606.jpg");
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  background-size: cover;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #FBF5F3;
+  font-weight: 500;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.title .type {
+  color: #F22B29;
 }
 /*# sourceMappingURL=style.css.map */
