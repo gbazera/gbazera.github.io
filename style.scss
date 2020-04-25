@@ -10,6 +10,10 @@ $SecondaryColor: #FFC800;
 $BgColor: #312F2F;
 $TextColor: #FBF5F3;
 
+body{
+    overflow-x: hidden;
+}
+
 nav{
     background-color: $BgColor;
     width: 100%;
@@ -19,18 +23,47 @@ nav{
     align-items: center;
 
     .logo{
-        height: 97%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         color: $PrimaryColor;
         text-decoration: none;
         font-size: 20px;
+        letter-spacing: 3px;
+        font-weight: 500;
     }
-    
-    .logo img{
-        height: 80%;
-        border-radius: 50%;
+
+    .burger{
+        display: inline-block;
+        width: 25px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: none;
+
+        div{
+            height: 3px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            width: 100%;
+            background-color: $TextColor;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .burger-active{
+        .line1{
+            transform: rotate(45deg) translate(3px, 5px);
+        }
+
+        .line2{
+            opacity: 0;
+        }
+
+        .line3{
+            transform: rotate(-45deg) translate(6px, -8px);
+        }
     }
 
     .nav-links{
@@ -39,11 +72,21 @@ nav{
         justify-content: space-around;
         align-items: center;
         width: 20%;
+        transition: transform 0.3s ease-in-out;
 
         a{
             color: $TextColor;
             text-decoration: none;
             font-size: 15px;
+            transition: all 0.3s ease-in-out;
+
+            i{
+                color: $TextColor;
+            }
+        }
+
+        a:hover{
+            color: $PrimaryColor;
         }
     }
 }
@@ -71,3 +114,63 @@ nav{
         color: $PrimaryColor;
     }
 }
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 8vh;
+    width: 100%;
+    background-color: $BgColor;
+    color: $TextColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .copyright{
+        opacity: 0.8;
+    }
+}
+
+//===== Responsive =====//
+@media screen and (max-width: 1280px){
+    nav .nav-links{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .title{
+        font-size: 30px;
+    }
+
+    nav .nav-links{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav .nav-links{
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        height: 92vh;
+        width: 50%;
+        flex-direction: column;
+        background-color: $BgColor;
+        z-index: 1;
+        transform: translateX(100%);
+    }
+
+    nav .burger{
+        display: inline-block;
+    }
+}
+
+nav .nav-active{
+    transform: translateX(0%);
+
+    a{
+        font-size: 18px;
+    }
+}
+//======================//

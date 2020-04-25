@@ -1,12 +1,30 @@
-function changeText(){
-    const type = document.querySelector('.type');
+//===== Text Changing =====//
+const type = document.querySelector('.type');
 
-    const keywords = ['Web Developer', 'Front-End Developer', 'UI/UX Designer', 'Game Developer'];
-    const randomKeyword = Math.floor(Math.random() * keywords.length);
-
-    type.innerHTML = keywords[randomKeyword];
-
-    setTimeout(changeText, 2000);
+function setWebDeveloper(){
+  type.innerHTML = "Web Developer";
+  setTimeout(setFreelancer, 2000);
 }
 
-changeText();
+function setFreelancer(){
+    type.innerHTML = "Freelancer";
+    setTimeout(setDesigner, 2000);
+}
+
+function setDesigner(){
+    type.innerHTML = "UI/UX Designer";
+    setTimeout(setWebDeveloper, 2000);
+}
+
+setWebDeveloper();
+//=========================//
+
+//======== Navbar ========//
+const nav = document.querySelector('.nav-links');
+const burger = document.querySelector('.burger');
+
+burger.addEventListener('click', ()=>{
+    nav.classList.toggle('nav-active');
+    burger.classList.toggle('burger-active');
+})
+//========================//
