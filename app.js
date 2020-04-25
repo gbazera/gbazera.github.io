@@ -6,7 +6,7 @@ function changeText(){
 
     type.innerHTML = keywords[randomKeyword];
 
-    setTimeout(changeText, 3000);
+    setTimeout(changeText, 2000);
 }
 
 changeText();
