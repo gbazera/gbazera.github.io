@@ -205,35 +205,26 @@ nav{
     
     .project{
         width: 350px;
-        height: 210px;
         transition: all 0.3s ease-in-out;
         background-color: rgba(242, 44, 41, 0.2);
-        padding: 10px;
         border-radius: 20px;
         text-decoration: none;
         margin: 10px;
 
         .img{
             width: 100%;
-            height: 90%;
+            height: 190px;
             background-size: cover !important;
+            border-radius: 20px 20px 0px 0px;
         }
 
         p{
             color: $PrimaryColor;
             text-align: center;
             width: 100%;
-            font-size: 19px;
+            padding: 5px;
+            font-size: 17px;
             transition: font-size 0.3s ease-in-out;
-        }
-    }
-
-    .project-active{
-        width: 550px;
-        height: 320px;
-
-        p{
-            font-size: 25px;
         }
     }
 }
@@ -251,6 +242,27 @@ footer{
 
     .copyright{
         opacity: 0.8;
+    }
+
+    .social-icons{
+        a{
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            color: $TextColor;
+            width: 30px;
+            height: 30px;
+            line-height: 34px;
+            border-radius: 50%;
+            transition: all 0.1s ease-in-out;
+            font-size: 20px;
+            opacity: 0.8;
+        }
+
+        a:hover{
+            color: $PrimaryColor;
+            opacity: 1;
+        }
     }
 }
 
@@ -286,6 +298,22 @@ footer{
 
     nav .burger{
         display: inline-block;
+    }
+
+    .about{
+        .info{
+            li{
+                font-size: 14px;
+            }
+
+            li:before{
+                font-size: 15px;
+            }
+        }
+
+        .progress-bar{
+            width: 150px;
+        }
     }
 }
 
