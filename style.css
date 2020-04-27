@@ -267,6 +267,14 @@ nav .nav-links a:hover {
   transition: font-size 0.3s ease-in-out;
 }
 
+.projects .dotcss .img {
+  background-color: #201f1f;
+  text-align: center;
+  line-height: 190px;
+  color: #F22B29;
+  font-size: 100px;
+}
+
 footer {
   position: absolute;
   bottom: 0;

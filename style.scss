@@ -227,6 +227,16 @@ nav{
             transition: font-size 0.3s ease-in-out;
         }
     }
+
+    .dotcss{
+        .img{
+            background-color: $BgColor;
+            text-align: center;
+            line-height: 190px;
+            color: $PrimaryColor;
+            font-size: 100px;
+        }
+    }
 }
 
 footer{
