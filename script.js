@@ -97,6 +97,5 @@ window.addEventListener('load', ()=>{
     if(darkTheme == true) toggleDarkTheme();
 
     georgian = JSON.parse(localStorage.getItem('ka'));
-    console.log(georgian);
     if(georgian == true){ setGeorgian(true); }
 });
